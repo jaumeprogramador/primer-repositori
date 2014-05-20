@@ -6,20 +6,12 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-public class ProvesStreams {
+public class ProvesStreams extends ProvesCharacterStream {
 
 	public static void main(String[] args) throws IOException {
-		
-	
-		
-		
-		
-		
+
+		mostraCharacters("/home/alumne/Escriptori/lorem.txt");
+		System.out.println(tempusFugit.temps() + " milisegons");
+
 	}
 }
-	
-
-    
-
-
-
