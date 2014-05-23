@@ -64,6 +64,25 @@ public abstract class ProvesBufferedStream {
 
 
 	}
+	
+	
+	public static void accept_name( String[] name, int[] r)
+    {
+
+       name = new String[40];
+       for(int i=0;i<40;i++)
+       {
+            try {
+                  InputStreamReader isr = new InputStreamReader(System.in);
+                  BufferedReader ab = new BufferedReader(isr);
+                  System.out.println("Enter the name of students");
+                  name[i] = ab.readLine();
+                  ab.close();
+            } catch (IOException e) {
+                  e.printStackTrace();
+            }
+       }             
+    }
 
 	public static void main(String[] args) throws IOException {
 		System.out.println("Mostra Line, ruta amb accents: \n");
