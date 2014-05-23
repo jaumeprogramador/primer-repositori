@@ -49,8 +49,19 @@ public abstract class ProvesBufferedStream {
 	// string en una línia.
 	public static void escriuLine(String desti, String[] dades)
 			throws IOException {
-		
-		
+	
+   InputStreamReader isr = new InputStreamReader(System.in);
+   BufferedReader ab = new BufferedReader(isr);
+
+    
+    dades = new String[40];
+
+    for(int i=0;i<dades.length;i++)
+    {
+        System.out.println("Enter data");
+        dades[i] = ab.readLine();
+    }             
+
 
 	}
 
