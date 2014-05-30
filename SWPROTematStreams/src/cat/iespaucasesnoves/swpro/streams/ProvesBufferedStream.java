@@ -90,5 +90,18 @@ public abstract class ProvesBufferedStream {
 		System.out.println(tempusFugit.temps());
 
 	}
+	
+	public void escriuLine (File f, String[] dades){
+
+try{
+PrintStream escriptor=new PrintStream(f);
+for (int i=0; i<dades.length ;i++){
+escriptor.println(dades[i]); 
+}
+
+} catch (Exception e){
+
+} escriptor.close();
+}
 
 }
